@@ -41,3 +41,5 @@ for q in range(5,100,5): # loop desde 5 a 100 con paso 5 para los distintos cuan
     
 df_final = pd.DataFrame(values, index =key) # se genera un dataframe con los valores de la lista values y los indices de la lista key.
 df_final # se muestra el dataframe.
+
+# Se debe hacer un merge con el archivo pruebalog.py
