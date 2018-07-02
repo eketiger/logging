@@ -2,12 +2,18 @@
 
 import pandas as pd # Importa libreria de manejo de dataframes
 import glob			# Importa libreria para manejo de archivos con cierto pathname definido
+import lasio		# Permite ejecutar unas conversión sobre archivos con extensión .las
+
+# Conversión de .las a .csv o .xlsx mediante el uso del módulo lasio
+# las = lasio.read('tests/examples/sample.las')
+# las.to_excel('sample.xlsx')
+# Para múltiples importaciones se puede usar un script:
+# las2excelbulk --recursive test_folder
+# Ver referencias en: https://lasio.readthedocs.io/en/latest/index.html
 
 filenames = glob.glob('*.xlsx')	# Genera una lista con los archivos que matchean con la búsqueda, en este caso todos los excel (.xlsx)
 lista_nombres_archivos = [pd.read_excel(filename) for filename in filenames]
 lna = lista_nombres_archivos
-
-
 
 # Para hacer loop sobre los archivos e ir tratandolos.
 for i in range(len(filenames)):
