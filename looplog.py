@@ -43,3 +43,6 @@ df_final = pd.DataFrame(values, index =key) # se genera un dataframe con los val
 df_final # se muestra el dataframe.
 
 # Se debe hacer un merge con el archivo pruebalog.py
+
+# Falta incorporar la lectura de todos los archivos al principio de este source code.
+# Falta incorporar el algunos cálculos al final del source code.
